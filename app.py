@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.get("/")
 def home():
     return jsonify(
-        application="Staging Deployment Project",
+        application="Staging Deployment Project - Automated CD",
         environment=os.getenv("APP_ENV", "development"),
     )
 
